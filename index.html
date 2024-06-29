@@ -1,257 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad94e17a8f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad94e17a8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/plogo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+          <img src="images/plogo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p class="animate-text">CS Student</p>
-            <h1 class="animate-text">Hello, I'm <span>Pranav</span> - a final year <br>Computer Science Student.</h1>
+          <p class="animate-text">CS Student</p>
+          <h1 class="animate-text">
+            Hello, I'm <span>Pranav</span> - a final year <br />Computer Science
+            Student.
+          </h1>
         </div>
+      </div>
     </div>
-</div>-
-<!-- ----------about--------- -->
+    -
+    <!-- ----------about--------- -->
 
-<div id="about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/file.png">
+          <div class="about-col-1">
+            <img src="images/file.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Greetings! I am a final-year scholar at KL University,
+              specializing in cloud and edge computing. With a keen interest in
+              machine learning, I have successfully completed several projects
+              in this dynamic field. My academic journey is further enriched by
+              hands-on experience and a passion for developing scalable, secure
+              IT infrastructures. I hold certifications in Azure AI-900, AWS
+              Cloud Practitioner, Red Hat EX-183, and Google Cloud Associate
+              Cloud Engineer, reflecting my commitment to innovation and
+              optimizing technological solutions.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('publications')">
+                Publications
+              </p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p >Greetings! I am a final-year scholar at KL University, specializing in cloud and edge computing. 
-                    With a keen interest in machine learning, I have successfully completed several projects in this dynamic field. 
-                    My academic journey is further enriched by hands-on experience and a passion for developing scalable, secure IT infrastructures. 
-                    I hold certifications in Azure AI-900, AWS Cloud Practitioner, Red Hat EX-183, and Google Cloud Associate Cloud Engineer, 
-                    reflecting my commitment to innovation and optimizing technological solutions.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('publications')">Publications</p>
-                </div>
-                <div class="tab-contents active-tab" id="education">
-                    <ul>
-                        <li><span>Aug 2021 - Ongoing</span><br>B.Tech in Computer Science at KL University</li>
-                        <li><span>2021</span><br>Intermediate in MPC at Sri Chaitanya Jr College</li>
-                        <li><span>2019</span><br>CBSE (10th) at V. S. St. John’s Higher Secondary School</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>Frontend</span><br>HTML, CSS, ReactJS</li>
-                        <li><span>Backend</span><br>MySQL</li>
-                        <li><span>Web-Technologies</span><br>Spring and SpringBoot, Django, MERN </li>
-                        <li><span>Machine Learning</span><br>Tensorflow, Keras, Numpy etcetera</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="publications">
-                    <ul>
-                        <li><span>IEEE</span><br>Turbo Powered Symmetric and Asymmetric Traffic Encryption Methods in Multi-Cloud Environment<br><a href="https://ieeexplore.ieee.org/document/10370512" target="_blank">Check it out here!</a></li>
-                        
-                    </ul>
-                </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>Aug 2021 - Ongoing</span><br />B.Tech in Computer
+                  Science at KL University
+                </li>
+                <li>
+                  <span>2021</span><br />Intermediate in MPC at Sri Chaitanya Jr
+                  College
+                </li>
+                <li>
+                  <span>2019</span><br />CBSE (10th) at V. S. St. John’s Higher
+                  Secondary School
+                </li>
+              </ul>
             </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>Frontend</span><br />HTML, CSS, ReactJS</li>
+                <li><span>Backend</span><br />MySQL</li>
+                <li>
+                  <span>Web-Technologies</span><br />Spring and SpringBoot,
+                  Django, MERN
+                </li>
+                <li>
+                  <span>Machine Learning</span><br />Tensorflow, Keras, Numpy
+                  etcetera
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="publications">
+              <ul>
+                <li>
+                  <span>IEEE</span><br />Turbo Powered Symmetric and Asymmetric
+                  Traffic Encryption Methods in Multi-Cloud Environment<br /><a
+                    href="https://ieeexplore.ieee.org/document/10370512"
+                    target="_blank"
+                    >Check it out here!</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- ----------- certifications -------------- -->
+    <!-- ----------- certifications -------------- -->
 
-<div id="certifications">
-    <div class="container">
+    <div id="certifications">
+      <div class="container">
         <h1 class="sub-title">My Certifications</h1>
         <div class="certifications-list">
-            <div>
-                <i class="fa-brands fa-aws"></i>
-                <h2>Amazon</h2>
-                <p>AWS-Cloud Practitioner</p>
-                <a href="https://www.credly.com/badges/50d60b62-65db-4745-8071-ffc6fcea6f96/public_url" target="_blank">Check it out here!</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-google"></i>
-                <h2>Google</h2>
-                <p>Cloud Associate Cloud Engineer</p>
-                <a href="https://www.credly.com/badges/178744ab-d5f1-490f-8c13-af419d1c5275/public_url" target="_blank">Check it out here!</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-redhat"></i>
-                <h2>Red-Hat</h2>
-                <p>Enterprise Application Developer</p>
-                <a href="https://www.credly.com/badges/02246445-3972-4419-898c-30b5b27d3615/public_url" target="_blank">Check it out here!</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-microsoft"></i>
-                <h2>Microsoft</h2>
-                <p>Azure AI Fundamentals</p>
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/PranavMaddi-2111/713BC71B4771CE3D?sharingId=4F7A61B3EED3931C" target="_blank">Check it out here!</a>
-            </div>
+          <div>
+            <i class="fa-brands fa-aws"></i>
+            <h2>Amazon</h2>
+            <p>AWS-Cloud Practitioner</p>
+            <a
+              href="https://www.credly.com/badges/50d60b62-65db-4745-8071-ffc6fcea6f96/public_url"
+              target="_blank"
+              >Check it out here!</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-google"></i>
+            <h2>Google</h2>
+            <p>Cloud Associate Cloud Engineer</p>
+            <a
+              href="https://www.credly.com/badges/178744ab-d5f1-490f-8c13-af419d1c5275/public_url"
+              target="_blank"
+              >Check it out here!</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-redhat"></i>
+            <h2>Red-Hat</h2>
+            <p>Enterprise Application Developer</p>
+            <a
+              href="https://www.credly.com/badges/02246445-3972-4419-898c-30b5b27d3615/public_url"
+              target="_blank"
+              >Check it out here!</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-microsoft"></i>
+            <h2>Microsoft</h2>
+            <p>Azure AI Fundamentals</p>
+            <a
+              href="https://learn.microsoft.com/api/credentials/share/en-us/PranavMaddi-2111/713BC71B4771CE3D?sharingId=4F7A61B3EED3931C"
+              target="_blank"
+              >Check it out here!</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- ----------- portfolio ---------- -->
+    <!-- ----------- portfolio ---------- -->
 
-<div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="project-list">
-            <div class="project">
-                <img src="images/ml1.jpg">
-                <div class="layer">
-                    <h3>Hand Gesture Recognition Application</h3>
-                    <p>A Python-based hand gesture recognition application using OpenCV and MediaPipe.</p>
-                    <a href="https://github.com/pranavmaddii/HandGestureRecognition" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          <div class="project">
+            <img src="images/ml1.jpg" />
+            <div class="layer">
+              <h3>Hand Gesture Recognition Application</h3>
+              <p>
+                A Python-based hand gesture recognition application using OpenCV
+                and MediaPipe.
+              </p>
+              <a
+                href="https://github.com/pranavmaddii/HandGestureRecognition"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="project">
-                <img src="images/ems.jpg">
-                <div class="layer">
-                    <h3>Event Management System</h3>
-                    <p>Developed a user-friendly system using Spring Boot & Microservices with MySQL Database.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" target="_blank"></i></a>
-                </div>
+          </div>
+          <div class="project">
+            <img src="images/ems.jpg" />
+            <div class="layer">
+              <h3>Event Management System</h3>
+              <p>
+                Developed a user-friendly system using Spring Boot &
+                Microservices with MySQL Database.
+              </p>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  target="_blank"
+                ></i
+              ></a>
             </div>
-            <div class="project">
-                <img src="images/ml2.jpg">
-                <div class="layer">
-                    <h3>Digit Recognition Application</h3>
-                    <p>Developed a high-accuracy Handwritten Digit Recognition system using the MNIST dataset and TensorFlow/Keras.</p>
-                    <a href="https://github.com/pranavmaddii/DigitRecognition" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="project">
+            <img src="images/ml2.jpg" />
+            <div class="layer">
+              <h3>Digit Recognition Application</h3>
+              <p>
+                Developed a high-accuracy Handwritten Digit Recognition system
+                using the MNIST dataset and TensorFlow/Keras.
+              </p>
+              <a
+                href="https://github.com/pranavmaddii/DigitRecognition"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
         </div>
-        <!-- <a href="#" class="btn">See more</a> --> 
+        <!-- <a href="#" class="btn">See more</a> -->
         <!-- 01:09:34   -->
+      </div>
     </div>
-</div>
 
-<!-- --------------contact----------------- -->
+    <!-- --------------contact----------------- -->
 
-<div id="contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> pranavrammaddi@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 9014081281</p>
-                <div class="social-icons">
-                    <a href="https://linkedin.com/in/maddi-pranav-venkat-sai-sivaram" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/pranavmaddii" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/prxnavm/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/PranavMaddii"target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <a href="Résumé/Resume.pdf" download class="btn btn2">Download Résumé</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> pranavrammaddi@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 9014081281</p>
+            <div class="social-icons">
+              <a
+                href="https://linkedin.com/in/maddi-pranav-venkat-sai-sivaram"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/pranavmaddii" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/prxnavm/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/PranavMaddii" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="Résumé/Resume.pdf" download class="btn btn2"
+              >Download Résumé</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="6"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Pranav.</p>
+      </div>
     </div>
-    <div class="copyright">
-        <p> Copyright © Pranav.</p>
-    </div>
-</div>
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+    <script>
+        var typed = new Typed('.animate-text', {
+            strings: [" ","CS Student", "Machine Learning Enthusiast", "Full Stack Dev"],
+            typeSpeed: 70,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+    
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+    
+            event.currentTarget.classList.add("active-link") 
+            document.getElementById(tabname).classList.add("active-tab")
         }
-
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
         }
-
-        event.currentTarget.classList.add("active-link") 
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-
-
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby8aVueSdG_WhRcpXKQmpyL2bSmzgWXZFgPEShN-laE92nj45wNZ_uRq-cU66DiTw0U/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => 
-            {
-                msg.innerHTML = "Recieved message ;)"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  
-  <script>
-    // JavaScript to trigger animation when content scrolls into view
-    document.addEventListener('DOMContentLoaded', function() {
-    var headerText = document.querySelectorAll('.animate-text');
-    var windowHeight = window.innerHeight;
-
-    function checkPosition() {
-        for (var i = 0; i < headerText.length; i++) {
-            var positionFromTop = headerText[i].getBoundingClientRect().top;
-
-            if (positionFromTop - windowHeight <= 0) {
-                headerText[i].classList.add('animate');
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8aVueSdG_WhRcpXKQmpyL2bSmzgWXZFgPEShN-laE92nj45wNZ_uRq-cU66DiTw0U/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => 
+                {
+                    msg.innerHTML = "Received message ;)"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        // JavaScript to trigger animation when content scrolls into view
+        document.addEventListener('DOMContentLoaded', function() {
+        var headerText = document.querySelectorAll('.animate-text');
+        var windowHeight = window.innerHeight;
+    
+        function checkPosition() {
+            for (var i = 0; i < headerText.length; i++) {
+                var positionFromTop = headerText[i].getBoundingClientRect().top;
+    
+                if (positionFromTop - windowHeight <= 0) {
+                    headerText[i].classList.add('animate');
+                }
             }
         }
-    }
-
-    window.addEventListener('scroll', checkPosition);
-    checkPosition();
-});
-
-  </script>
-
-</body>
+    
+        window.addEventListener('scroll', checkPosition);
+        checkPosition();
+    });
+    </script>
+  </body>
 </html>
+
+<!-- index.html -->
